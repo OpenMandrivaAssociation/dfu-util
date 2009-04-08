@@ -17,7 +17,8 @@ License: GPLv2+
 Group: Development/Other
 Url: http://wiki.openmoko.org/wiki/Dfu-util
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: devel(libusb-0.1) libusb-static-devel
+BuildRequires: devel(libusb-0.1) 
+BuildRequires: libusb-static-devel glibc-static-devel
 
 %description
 Dfu-util is a tool to reflash the firmware of compliant usb device.
