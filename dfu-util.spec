@@ -3,7 +3,7 @@
 Summary:	Tool to reflash firmware by usb
 Name:		dfu-util
 Version:	0.2
-Release:	%mkrel 0.%{gitdate}.1
+Release:	%mkrel 0.%{gitdate}.2
 Source0:	%{name}-%{version}.tar.xz
 License:	GPLv2+
 Group:		Development/Other
