@@ -32,3 +32,21 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %{_bindir}/dfu-util
 %{_mandir}/man1/*
+
+
+%changelog
+* Tue May 03 2011 Michael Scherer <misc@mandriva.org> 0.2-0.20102407.2mdv2011.0
++ Revision: 664834
+- mass rebuild
+
+  + Per Øyvind Karlsen <peroyvind@mandriva.org>
+    - update to latest code from git (899d6dadadfca07f0290da519f1769e5d0193721)
+    - apply some cosmetics
+
+* Wed Apr 08 2009 Michael Scherer <misc@mandriva.org> 0-0.svn4965.1mdv2009.1
++ Revision: 365206
+- add another missing buildrequires
+- add missing BuildRequires
+- import dfu-util
+
+
