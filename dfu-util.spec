@@ -27,6 +27,8 @@ connected over USB.
 %files 
 %defattr(-,root,root)
 %{_bindir}/dfu-util
+%{_bindir}/dfu-prefix
+%{_bindir}/dfu-suffix
 %{_mandir}/man1/*
 
 
