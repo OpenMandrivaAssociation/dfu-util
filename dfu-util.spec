@@ -1,36 +1,34 @@
-%define	gitdate	20102407
-
 Summary:	Tool to reflash firmware by usb
-Name:		dfu-util
-Version:	0.2
-Release:	%mkrel 0.%{gitdate}.2
-Source0:	%{name}-%{version}.tar.xz
 License:	GPLv2+
 Group:		Development/Other
+Name:		dfu-util
+Version:	0.11
+Release:	1
+Source0:	https://sourceforge.net/projects/dfu-util/files/dfu-util-%{version}.tar.gz
 Url:		http://wiki.openmoko.org/wiki/Dfu-util
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	libusb-devel
+
+BuildRequires: pkgconfig(libusb-1.0)
 
 %description
 Dfu-util is a tool to reflash the firmware of compliant usb device.
+DFU is intended to download and upload firmware to/from devices
+connected over USB.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure 
-%make
+%make_build
 
 %install
-rm -rf $RPM_BUILD_ROOT
-%makeinstall
-
-%clean
-rm -rf $RPM_BUILD_ROOT
+%make_install
 
 %files 
 %defattr(-,root,root)
 %{_bindir}/dfu-util
+%{_bindir}/dfu-prefix
+%{_bindir}/dfu-suffix
 %{_mandir}/man1/*
 
 
