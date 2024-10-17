@@ -5,7 +5,7 @@ Name:		dfu-util
 Version:	0.11
 Release:	1
 Source0:	https://sourceforge.net/projects/dfu-util/files/dfu-util-%{version}.tar.gz
-Url:		http://wiki.openmoko.org/wiki/Dfu-util
+Url:		https://wiki.openmoko.org/wiki/Dfu-util
 
 BuildRequires: pkgconfig(libusb-1.0)
 
