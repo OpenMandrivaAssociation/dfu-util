@@ -7,6 +7,11 @@ Release:	1
 Source0:	https://sourceforge.net/projects/dfu-util/files/dfu-util-%{version}.tar.gz
 Url:		https://wiki.openmoko.org/wiki/Dfu-util
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: pkgconfig(libusb-1.0)
 
 %description
